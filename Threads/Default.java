@@ -5,8 +5,9 @@ public class Default {
         Thread th = Thread.currentThread();
         System.out.println(th);
         /*
-         * setName
-         * setPriority
+         * setName(String)
+         * setPriority(int 1-10)
+         * sleep(ms) (checkedException ->) InterruptedException 
          */
     }
 }
