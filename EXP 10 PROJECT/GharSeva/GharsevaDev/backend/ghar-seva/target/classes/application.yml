@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gharseva
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: "9e92f9b2c0a44d3389c7f8f0a2d3b6a49e1c7f2b6e9d4c3a2f1b0c9d8e7f6a5b"
+    expirationMinutes: 60
+
+
